@@ -8,11 +8,15 @@ Baseball Stat Finder is an application that searches through season statistics f
   
   The user selects: 
   - Year = 2002
-  - item
-  - item
+  - Games >= 50
+  - Batting Avg >=.250
+  - Home Runs <= 20
   
-  , Games >= 50, Batting Avg >=.250, Home Runs <= 20  
+The program would return a table that only shows players that 1) played in at least 50 games, 2) had a batting average of at least .250 and 3)hit no more than 20 home runs in the 2002 season. ![]({{site.baseurl}}/https://drive.google.com/file/d/0B5PipwWov_yzZk4yWDdpUHR5UUk/view?usp=sharing)
 
+
+
+In addition to showing player stats for each year, the user may also select to look at career stats for all current players. 
 
 
 
