@@ -122,12 +122,13 @@ public class BasePlayerFinder extends JFrame implements ActionListener{
 		lblSelectYear.setBounds(35, 30, 69, 14);
 		contentPane.add(lblSelectYear);
 		
-		JComboBox yearBox = new JComboBox();
+		String[] yearList = {"Career", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"};
+		JComboBox<String> yearBox = new JComboBox<String>(yearList);
 		yearBox.addActionListener(this);
 		yearBox.setActionCommand("0");
 		
 
-		yearBox.setModel(new DefaultComboBoxModel(new String[] {"Career", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"}));
+		//yearBox.setModel(new DefaultComboBoxModel(new String[] {));
 		yearBox.setBounds(101, 27, 112, 20);
 		contentPane.add(yearBox);
 		
@@ -139,17 +140,18 @@ public class BasePlayerFinder extends JFrame implements ActionListener{
 		lblStat.setBounds(45, 107, 46, 14);
 		contentPane.add(lblStat);
 		
-		JComboBox param1Index = new JComboBox();
+		String[] statNames = {"Games", "At Bats", "Runs", "Hits", "Doubles", "Triples", "HR", "RBI", "SB", "CS", "BB", "SO", "IBB", "HBP", "SH", "SF", "GIDP", "BA", "SLG"};
+		String[] operators = {"<=", ">="};
+		
+		JComboBox<String> param1Index = new JComboBox<String>(statNames);
 		param1Index.addActionListener(this);
 		param1Index.setActionCommand("1");
-		param1Index.setModel(new DefaultComboBoxModel(new String[] {"Games", "At Bats", "Runs", "Hits", "Doubles", "Triples", "HR", "RBI", "SB", "CS", "BB", "SO", "IBB", "HBP", "SH", "SF", "GIDP", "BA", "SLG"}));
 		param1Index.setBounds(101, 107, 89, 20);
 		contentPane.add(param1Index);
 		
-		JComboBox param1Compare = new JComboBox();
+		JComboBox<String> param1Compare = new JComboBox<String>(operators);
 		param1Compare.addActionListener(this);
 		param1Compare.setActionCommand("2");
-		param1Compare.setModel(new DefaultComboBoxModel(new String[] {"<=", ">="}));
 		param1Compare.setBounds(219, 107, 46, 20);
 		contentPane.add(param1Compare);
 		
@@ -162,17 +164,15 @@ public class BasePlayerFinder extends JFrame implements ActionListener{
 		label.setBounds(45, 163, 46, 14);
 		contentPane.add(label);
 		
-		JComboBox param2Index = new JComboBox();
+		JComboBox<String> param2Index = new JComboBox<String>(statNames);
 		param2Index.addActionListener(this);
 		param2Index.setActionCommand("3");
-		param2Index.setModel(new DefaultComboBoxModel(new String[] {"Games", "At Bats", "Runs", "Hits", "Doubles", "Triples", "HR", "RBI", "SB", "CS", "BB", "SO", "IBB", "HBP", "SH", "SF", "GIDP", "BA", "SLG"}));
 		param2Index.setBounds(101, 163, 89, 20);
 		contentPane.add(param2Index);
 		
-		JComboBox param2Compare = new JComboBox();
+		JComboBox<String> param2Compare = new JComboBox<String>(operators);
 		param2Compare.addActionListener(this);
 		param2Compare.setActionCommand("4");
-		param2Compare.setModel(new DefaultComboBoxModel(new String[] {"<=", ">="}));
 		param2Compare.setBounds(219, 163, 46, 20);
 		contentPane.add(param2Compare);
 		
@@ -189,17 +189,14 @@ public class BasePlayerFinder extends JFrame implements ActionListener{
 		label_2.setBounds(45, 219, 46, 14);
 		contentPane.add(label_2);
 		
-		JComboBox param3Index = new JComboBox();
+		JComboBox<String> param3Index = new JComboBox<String>(statNames);
 		param3Index.addActionListener(this);
 		param3Index.setActionCommand("5");
-		param3Index.setModel(new DefaultComboBoxModel(new String[] {"Games", "At Bats", "Runs", "Hits", "Doubles", "Triples", "HR", "RBI", "SB", "CS", "BB", "SO", "IBB", "HBP", "SH", "SF", "GIDP", "BA", "SLG"}));
 		param3Index.setBounds(101, 219, 89, 20);
 		contentPane.add(param3Index);
 		
-		JComboBox param3Compare = new JComboBox();
-		param3Compare.addActionListener(this);
+		JComboBox<String> param3Compare = new JComboBox<String>(operators);param3Compare.addActionListener(this);
 		param3Compare.setActionCommand("6");
-		param3Compare.setModel(new DefaultComboBoxModel(new String[] {"<=", ">="}));
 		param3Compare.setBounds(219, 219, 46, 20);
 		contentPane.add(param3Compare);
 		
