@@ -1,8 +1,8 @@
-#Baseball Stat Finder
+**Baseball Stat Finder**
 
----
-## Project Summary ##
-----
+
+# Project Summary 
+
 
 Baseball Stat Finder is an application that searches through season statistics for every current Major Leauge Baseball player. The user selects a year to search through, and up to 3 stats to filter by. The application will generate a table based on those parameters. 
 
@@ -20,28 +20,28 @@ The program would return a table that only shows players that 1) played in at le
   
   
 ---
-##Classes Documentation
+#Classes Documentation
 ---
 BaseballStatFinder uses 3 created classes (2 GUIs and 1 logical). 
 
 ----
-###BaseballList
+##BaseballList
 ----
 This is the class that stores the data from the input files "MasterCurrent.csv" and "BattingCurrent.csv". (For more information on these files, see the "Files" section of this README.) 
 
 ----
-###PlayersTable
+##PlayersTable
 ----
 
 This is the GUI that displays the players passed from BasePlayerFinder.java
 
-####Constructor
+###Constructor
 ----
 PlayersTable(LinkedList<String[]> linkedList)
 
 _Initializes window with a table that’s populated with a Linked List (# of rows in table) of String Arrays (stats for player)._
     
-####Attributes
+###Attributes
 ----
 
 
