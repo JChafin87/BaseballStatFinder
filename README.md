@@ -45,7 +45,6 @@ This is the class that stores the data from the input files "MasterCurrent.csv" 
 
 ####Constructor
 
-
 BaseballList()
 
 _Creates an empty BaseballList. The attribute values will be set later via method calls._
