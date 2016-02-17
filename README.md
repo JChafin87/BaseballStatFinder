@@ -18,39 +18,7 @@ The program would return a table that only shows players that 1) played in at le
   
 #Classes Documentation
 
-BaseballStatFinder uses 3 created classes (2 GUIs and 1 logical). 
-
-
-
-
------
-###PlayersTable 
-
------
-
-This is the GUI that displays the players passed from BasePlayerFinder.java
-
-####Constructor
-
-PlayersTable(LinkedList<String[]> linkedList)
-
-_Initializes window with a table that’s populated with a Linked List (# of rows in table) of String Arrays (stats for player)._
-
-
-####Attributes
-
-| Attribute | Description|
-| ------------- |:-------------:|
-| private JPanel contentPane      | The JPanel that displays the result table. |
-| private JTable table1      | The JTable that displays the data of tableStats.      | 
-| public LinkedList<String[]> tableStats | Contains the values to populate the resulting table.      |
-
-####Methods
-
-| Returns | Method|
-| ------------- |:-------------:|
-| void     | **opentPT**(LinkedList<String[]> playerList) |
-|      |  _A method to launch a new PlayersTable window from a separate JFrame._  | 
+BaseballStatFinder uses three created classes BaseballList, BasePlayerFinder and PlayersTable. The latter two are GUIs. 
 
 ----
 ###BaseballList
@@ -82,6 +50,64 @@ _Creates an empty BaseballList. The attribute values will be set later via metho
 | LinkedList\<String[]\>     | **findPlayers**(float[] paramValues) |
 |      |  _A method that returns a Linked List of player stats that match the paramValues. (See Class BasePlayerFinder for more info on “paramValues”)._  |
 
+
+-----
+###PlayersTable 
+
+-----
+
+This is the GUI that displays the players passed from BasePlayerFinder.java
+
+####Constructor
+
+PlayersTable(LinkedList<String[]> linkedList)
+
+_Initializes window with a table that’s populated with a Linked List (# of rows in table) of String Arrays (stats for player)._
+
+
+####Attributes
+
+| Attribute | Description|
+| ------------- |:-------------:|
+| private JPanel contentPane      | The JPanel that displays the result table. |
+| private JTable table1      | The JTable that displays the data of tableStats.      | 
+| public LinkedList<String[]> tableStats | Contains the values to populate the resulting table.      |
+
+####Methods
+
+| Returns | Method|
+| ------------- |:-------------:|
+| void     | **opentPT**(LinkedList<String[]> playerList) |
+|      |  _A method to launch a new PlayersTable window from a separate JFrame._  | 
+
+---
+###BasePlayerFinder 
+---
+
+This is the GUI where the user enters the parameters used to create the final PlayersTable. It is the main class of our application. It implements the class ActionListener.
+
+####Constructor
+
+public BasePlayerFinder()
+
+Initializes our JFrame.
+
+####Attributes
+
+| Attribute | Description|
+| ------------- |:-------------:|
+| private JPanel contentPane      | The JPanel that displays the result table. |
+| private JComboBox yearBox      | Selects the value of the year to populate table.      | 
+| private JTextField param1Value | Gets the number value of our first stat to search.      |
+| private JTextField param2Value      | Gets the number value of our second stat to search. |
+| private JTextField param3Value      | Gets the number value of our third stat to search.      | 
+| private JComboBox param1Index | Gets the first stat to search for (Example: Games Played)      |
+| private JComboBox param2Index      | Gets the second stat to search for (Example: Games Played) |
+| private JComboBox param3Index      | Gets the third stat to search for (Example: Games Played)     | 
+|private JComboBox param1Compare | Gets the first operator for our serach (Example: \<= or \>=      |
+| private JComboBox param2Compare     | Gets the second operator for our serach (Example: \<= or \>= |
+| private JComboBox param3Compare      | Gets the third operator for our serach (Example: \<= or \>=      | 
+| public float[] paramValues | An array of the values of all the other attributes. Used to find our final list.      |
 
 
 
