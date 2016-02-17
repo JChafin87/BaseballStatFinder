@@ -50,9 +50,9 @@ public class PlayersTable extends JFrame {
 	 * Create the frame.
 	 */
 	
-	public PlayersTable() {
+//	public PlayersTable() {
 		
-	}
+//	}
 	public PlayersTable(LinkedList<String[]> list) {
 		LinkedList<String[]> players = new LinkedList<String[]>();
 		players = list;

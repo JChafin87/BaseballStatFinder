@@ -72,22 +72,22 @@ public class BasePlayerFinder extends JFrame implements ActionListener{
 			case 3://Parameter 2 index
 				JComboBox cb3 = (JComboBox) e.getSource();
 				int newSelection3 = cb3.getSelectedIndex();
-			    paramValues[action] = (newSelection3);
+			    paramValues[4] = (newSelection3);
 				break;
 			case 4: //Parameter 2 operator
 				JComboBox cb4 = (JComboBox) e.getSource();
 				int newSelection4 = cb4.getSelectedIndex();
-			    paramValues[action] = (newSelection4);
+				paramValues[5] = (newSelection4);
 				break;
 			case 5: //Parameter 3 index
 				JComboBox cb5 = (JComboBox) e.getSource();
 				int newSelection5 = cb5.getSelectedIndex();
-			    paramValues[action] = (newSelection5);
+			    paramValues[7] = (newSelection5);
 				break;
 			case 6: //Parameter 3 operator
 				JComboBox cb6 = (JComboBox) e.getSource();
 				int newSelection6 = cb6.getSelectedIndex();
-			    paramValues[action] = (newSelection6);
+			    paramValues[8] = (newSelection6);
 				break;
 			case 7:
 				float value1 = Float.valueOf(param1Value.getText());
@@ -96,6 +96,7 @@ public class BasePlayerFinder extends JFrame implements ActionListener{
 				paramValues[3] = value1;
 				paramValues[6] = value2;
 				paramValues[9] = value3;
+				System.out.println(Arrays.toString(paramValues));
 				BaseballList tableStats = new BaseballList();
 				tableStats.readFile();
 				tableStats.readStats(String.valueOf((int) paramValues[0]));
