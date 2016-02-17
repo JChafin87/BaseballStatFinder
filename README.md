@@ -67,7 +67,7 @@ _Creates an empty BaseballList. The attribute values will be set later via metho
 ####Attributes
 | Attribute | Description|
 | ------------- |:-------------:|
-| public LinkedList<String[]> players     | A List of String Arrays, where each list entry is a player and the string array contains the player's name and unique ID. |
+| public LinkedList /<String[]/> players     | A List of String Arrays, where each list entry is a player and the string array contains the player's name and unique ID. |
 | public LinkedList<String[]> stats     | A List of String Arrays, where each String Array is a specific player's stats from a specific year.     | 
 
 
