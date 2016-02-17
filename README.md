@@ -36,24 +36,13 @@ PlayersTable(LinkedList<String[]> linkedList)
     
 ####Attributes
 ----
-private JPanel contentPane
 
-_The JPanel that displays the result table._
 
-----
-private JTable table1
-
-_The JTable that displays the data of tableStats._
-
-public LinkedList<String[]> tableStats
-
-_Contains the values to populate the resulting table._
-
-| Tables | Are|
+| Attribute | Description|
 | ------------- |:-------------:|
 | private JPanel contentPane      | The JPanel that displays the result table. |
-| col 2 is      | centered      | 
-| zebra stripes | are neat      | 
+| private JTable table1      | The JTable that displays the data of tableStats.      | 
+| public LinkedList<String[]> tableStats | Contains the values to populate the resulting table.      | 
 
 
 
