@@ -188,7 +188,9 @@ There is some data in this file that isn't accessed in this application. It is r
 | BA   |  Total Batting Average recorded in this season. |
 | SLG   |  Total Slugging Percentage recorded this season. |	
 
+#Credits
 
+Thank you to Sean Lahman for supplying the amazing data. The dataset used in this application is a subset of data that can be found by [visiting Sean Lahman's site](http://www.seanlahman.com/baseball-archive/statistics/).
 																				
 
 
