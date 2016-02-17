@@ -115,7 +115,7 @@ Initializes our JFrame.
 | Returns | Method|
 | ------------- |:-------------:|
 | void     | **actionPerformed**(ActionEvent e) |
-|      |  Overrides method from ActionListener. Captures user's action on the frame's components and saves the values they choose into paramValues. | 
+|      |  _Overrides method from ActionListener. Captures user's action on the frame's components and saves the values they choose into paramValues._ | 
 
 
 
