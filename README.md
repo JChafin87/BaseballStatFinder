@@ -51,14 +51,25 @@ _Initializes window with a table that’s populated with a Linked List (# of row
 | ------------- |:-------------:|
 | void     | **opentPT**(LinkedList<String[]> playerList) |
 |      |  _A method to launch a new PlayersTable window from a separate JFrame._  | 
-| void     | **opentPT**(LinkedList<String[]> playerList) |
-|      |  A method to launch a new PlayersTable window from a separate JFrame.  | 
 
 ----
 ###BaseballList
 ----
 
 This is the class that stores the data from the input files "MasterCurrent.csv" and "BattingCurrent.csv". (For more information on these files, see the "Files" section of this README.) 
+
+####Constructor
+
+BaseballList()
+
+_Creates an empty BaseballList. The attribute values will be set later via method calls._
+
+####Attributes
+| Attribute | Description|
+| ------------- |:-------------:|
+| public LinkedList<String[]> players     | A List of String Arrays, where each list entry is a player and the string array contains the player's name and unique ID. |
+| public LinkedList<String[]> stats     | A List of String Arrays, where each String Array is a specific player's stats from a specific year.     | 
+
 
 
 
