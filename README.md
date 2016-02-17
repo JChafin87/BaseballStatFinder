@@ -25,10 +25,11 @@ This is the class that stores the data from the input files "MasterCurrent.csv" 
 ###PlayersTable
 This is the GUI that displays the players passed from BasePlayerFinder.java
 ![IMG4](http://i.imgur.com/ozY1TXO.png)
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 
 
