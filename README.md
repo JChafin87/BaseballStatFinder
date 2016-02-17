@@ -44,7 +44,7 @@ BaseballStatFinder uses three created classes: BaseballList, BasePlayerFinder an
 This is the class that stores the data from the input files "MasterCurrent.csv" and "BattingCurrent.csv". (For more information on these files, see the "Files" section of this README.) 
 
 ####Constructor
-===
+
 
 BaseballList()
 
