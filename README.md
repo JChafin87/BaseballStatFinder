@@ -96,7 +96,7 @@ Initializes our JFrame.
 
 | Attribute | Description|
 | ------------- |:-------------:|
-| private JPanel contentPane      | The JPanel that displays the result table. |
+| private JPanel contentPane      | The JPanel that allows the user to select the parameters for the final table . |
 | private JComboBox yearBox      | Selects the value of the year to populate table.      | 
 | private JTextField param1Value | Gets the number value of our first stat to search.      |
 | private JTextField param2Value      | Gets the number value of our second stat to search. |
@@ -104,9 +104,9 @@ Initializes our JFrame.
 | private JComboBox param1Index | Gets the first stat to search for (Example: Games Played)      |
 | private JComboBox param2Index      | Gets the second stat to search for (Example: Games Played) |
 | private JComboBox param3Index      | Gets the third stat to search for (Example: Games Played)     | 
-|private JComboBox param1Compare | Gets the first operator for our serach (Example: \<= or \>=      |
-| private JComboBox param2Compare     | Gets the second operator for our serach (Example: \<= or \>= |
-| private JComboBox param3Compare      | Gets the third operator for our serach (Example: \<= or \>=      | 
+|private JComboBox param1Compare | Gets the first operator for our serach (Example: \<= or \>= )     |
+| private JComboBox param2Compare     | Gets the second operator for our serach (Example: \<= or \>=) |
+| private JComboBox param3Compare      | Gets the third operator for our serach (Example: \<= or \>= )     | 
 | public float[] paramValues | An array of the values of all the other attributes. Used to find our final list.      |
 
 
