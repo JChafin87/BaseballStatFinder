@@ -30,7 +30,9 @@ BaseballStatFinder uses 3 created classes (2 GUIs and 1 logical).
 This is the class that stores the data from the input files "MasterCurrent.csv" and "BattingCurrent.csv". (For more information on these files, see the "Files" section of this README.) 
 
 
-###PlayersTable
+###PlayersTable 
+
+-----
 
 
 This is the GUI that displays the players passed from BasePlayerFinder.java
