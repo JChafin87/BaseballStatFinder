@@ -117,11 +117,62 @@ Initializes our JFrame.
 | void     | **actionPerformed**(ActionEvent e) |
 |      |  _Overrides method from ActionListener. Captures user's action on the frame's components and saves the values they choose into paramValues._ | 
 
+.
 
+#Files
 
+Baseball Stat Finder uses two input files, "MasterCurrent.csv" and "MasterBatting.csv".
+These files are raw data of player information and batting statistics respectively.  This section will give an explanation of what data is contained.
 
+---
+###MasterCurrent
+---
+There is some data in this file that isn't accessed in this application. It is retained in case it is implemented at a later date.
 
+| Attribute | Description|
+| ------------- |:-------------:|
+| playerID    | A unique value for each player. Is used as our primary key. |
+| birthYear     |  Player's year of birth. (not used) | 
+| nameFirst     | Player's first name. |
+| nameLast     |  Player's last name. | 
+| weight     | Player's weight. (not used) |
+| height     |  Player's height. (not used) | 
+| bats     | Side of the plate that player bats from. (not used) |
+| throws     |  Player's throwing hand. (not used)| 
+| debut     | Date of player's first MLB game. (not used)|
+| finalGame     |  Date of player's final MLB game. (not used) | 
 
+---
+###BattingCurrent
+---
+
+| Attribute | Description|
+| ------------- |:-------------:|
+| playerID    | A unique value for each player. Is used as our primary key. |
+| yearID     |  The year that the stats occurred. | 
+| stint    | A Number representing how many times a player has been traded and traded back to this teamID (not used/to delete)|
+| teamID     |  ID of the player's team. | 
+| lgID     | ID of the player's team's league. |
+| G    |  Number of games played in this season. | 
+| AB     | Number of At Bats in this season. |
+| R     |  Number of Runs scored in this season. | 
+| H     | Number of Hits recorded in this season. |
+| 2B    |  Number of Doubles recorded in this season. | 
+| 3B   | Number of Triples recorded in this season. |
+| HR     |  Number of Home Runs hit in this season. | 
+| RBI     | Number of Runs Batted in for this season. |
+| SB    |  Number of Stolen Bases recorded in this season. | 
+| CS     | Number of times Caught Stealing in this season. |
+| BB    |  Number of walks recorded in this season. | 
+| SO    | Number of Strike Outs suffered in this season. |
+| IBB     |  Number of intentional walks recorded in this season.  | 
+| HBP    | Number of times a player was Hit By a Pitch in this season. |
+| SH    |  Number of Sacrifice Hits recorded in this season. |
+| SF    |  Number of Sacrifice Flies recorded in this season. |
+| GIDP   | Number of double plays grounded into this season. |
+| BA   |  Total Batting Average recorded in this season. |
+| SLG   |  Total Slugging Percentage recorded this season. |								
+																				
 
 
 
