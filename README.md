@@ -27,7 +27,7 @@ BaseballStatFinder uses 3 created classes (2 GUIs and 1 logical).
 
 
 
-
+-----
 ###PlayersTable 
 
 -----
@@ -35,7 +35,7 @@ BaseballStatFinder uses 3 created classes (2 GUIs and 1 logical).
 
 This is the GUI that displays the players passed from BasePlayerFinder.java
 
-----
+
 ####Constructor
 
 PlayersTable(LinkedList<String[]> linkedList)
