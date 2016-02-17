@@ -27,7 +27,7 @@ public LinkedList&lt;String\[\]&gt; tableStats;
 **Methods**
 
   ------------------------------------------------------------------------------------
-  **Returns**   **Method Name**
+  **Returns**                                                          **Method Name**
   ------------- ----------------------------------------------------------------------
   Void          **opentPT**(LinkedList&lt;String\[\]&gt; playerList)
                 
