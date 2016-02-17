@@ -43,7 +43,15 @@ _Initializes window with a table that’s populated with a Linked List (# of row
 | ------------- |:-------------:|
 | private JPanel contentPane      | The JPanel that displays the result table. |
 | private JTable table1      | The JTable that displays the data of tableStats.      | 
-| public LinkedList<String[]> tableStats | Contains the values to populate the resulting table.      | 
+| public LinkedList<String[]> tableStats | Contains the values to populate the resulting table.      |
+
+####Methods
+
+| Returns | method|
+| ------------- |:-------------:|
+| void     | **opentPT**(LinkedList<String[]> playerList)
+A method to launch a new PlayersTable window from a separate JFrame.|
+|      |    | 
 
 ----
 ###BaseballList
