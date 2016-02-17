@@ -49,8 +49,7 @@ _Initializes window with a table that’s populated with a Linked List (# of row
 
 | Returns | method|
 | ------------- |:-------------:|
-| void     | **opentPT**(LinkedList<String[]> playerList)
-A method to launch a new PlayersTable window from a separate JFrame.|
+| void     | **opentPT**(LinkedList<String[]> playerList) A method to launch a new PlayersTable window from a separate JFrame.|
 |      |    | 
 
 ----
