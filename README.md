@@ -18,7 +18,7 @@ The program would return a table that only shows players that 1) played in at le
  
 .
 
-##Running the Program
+#Running the Program
 There are multiple ways to access this program. It can be compiled and ran with any Java IDE, but since I created the project using Eclipse, I will explain how to run the program through Eclipse. Feel free to use any Java IDE you wish.
 
 1. [Download Eclipse](http://www.eclipse.org/downloads/packages/release/Kepler/SR2) and install it on your system.
