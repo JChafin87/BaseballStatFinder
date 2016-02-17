@@ -108,7 +108,7 @@ Initializes our JFrame.
 | private JComboBox param2Compare     | Gets the second operator for our serach (Example: \<= or \>=) |
 | private JComboBox param3Compare      | Gets the third operator for our serach (Example: \<= or \>= )     | 
 | public float[] paramValues | An array of the values of all the other attributes. Used to find our final list.      |
-
+| private JButton generateButton | Button that passes the yearBox value into a new BaseballList. Creates a LinkedList\<String[]\> that utilizes BaseballList.findPlayers() and creates a PlayersTable from the created LinkedList.      |
 
 
 
