@@ -70,6 +70,28 @@ _Creates an empty BaseballList. The attribute values will be set later via metho
 | public LinkedList \<String[]\> players     | A List of String Arrays, where each list entry is a player and the string array contains the player's name and unique ID. |
 | public LinkedList\<String[]\> stats     | A List of String Arrays, where each String Array is a specific player's stats from a specific year.     | 
 
+####Methods
+| Returns | Method|
+| ------------- |:-------------:|
+| void     | **readFile()** |
+|      |  _A method that reads all of the players’ name data from the input file “MasterCurrent.csv” and stores these values into the “players” attribute._  | 
+| void     | **readStats**(String yearValue) |
+|      |  _A method that reads the players’ stats from the input file “BattingCurrent.csv” and saves these values to the “stats” attribute. yearValue represents the year value of the stats you want to return. (i.e. if yearValue = “1997”, “stats” will be all entries where the year is 1997.)_  |
+| void     | **findPlayer**(String playerID) |
+|      |  _A method that returns a player’s name(first and last) by passing his unique playerID._  |
+| void     | **findPlayers**(float[] paramValues) |
+|      |  _A method that returns a Linked List of player stats that match the paramValues. (See Class BasePlayerFinder for more info on “paramValues”)._  |
+
+
+
+
+
+
+
+
+
+
+
 
 
 
