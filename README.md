@@ -25,9 +25,7 @@ The program would return a table that only shows players that 1) played in at le
 BaseballStatFinder uses 3 created classes (2 GUIs and 1 logical). 
 
 
-###BaseballList
 
-This is the class that stores the data from the input files "MasterCurrent.csv" and "BattingCurrent.csv". (For more information on these files, see the "Files" section of this README.) 
 
 
 ###PlayersTable 
@@ -55,6 +53,9 @@ _Initializes window with a table that’s populated with a Linked List (# of row
 | private JTable table1      | The JTable that displays the data of tableStats.      | 
 | public LinkedList<String[]> tableStats | Contains the values to populate the resulting table.      | 
 
+###BaseballList
+
+This is the class that stores the data from the input files "MasterCurrent.csv" and "BattingCurrent.csv". (For more information on these files, see the "Files" section of this README.) 
 
 
 
