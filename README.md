@@ -42,7 +42,7 @@ PlayersTable(LinkedList<String[]> linkedList)
 
 _Initializes window with a table that’s populated with a Linked List (# of rows in table) of String Arrays (stats for player)._
 
-----
+
 ####Attributes
 
 
