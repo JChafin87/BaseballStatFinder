@@ -35,12 +35,14 @@ This is the class that stores the data from the input files "MasterCurrent.csv" 
 
 This is the GUI that displays the players passed from BasePlayerFinder.java
 
+----
 ####Constructor
 ----
 PlayersTable(LinkedList<String[]> linkedList)
 
 _Initializes window with a table that’s populated with a Linked List (# of rows in table) of String Arrays (stats for player)._
-    
+
+----
 ####Attributes
 ----
 
