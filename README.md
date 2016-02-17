@@ -15,7 +15,22 @@ Baseball Stat Finder is an application that searches through season statistics f
   - Home Runs <= 20
   
 The program would return a table that only shows players that 1) played in at least 50 games, 2) had a batting average of at least .250 and 3)hit no more than 20 home runs in the 2002 season. Here is the table that would be shown: ![IMG1](http://i.imgur.com/3EY0ULt.png)
-  
+ 
+.
+
+##Running the Program
+There are multiple ways to access this program. It can be compiled and ran with any Java IDE, but since I created the project using Eclipse, I will explain how to run the program through Eclipse. Feel free to use any Java IDE you wish.
+
+1. [Download Eclipse](http://www.eclipse.org/downloads/packages/release/Kepler/SR2) and install it on your system.
+
+2. Download the git repository as a .zip file and extract it to your system.
+
+3. Open Eclipse and select File-\>Import-\>General-\>Existing Projects into WorkSpace. Click Next, then click Browse for root directory and locate your extracted BaseballStatFinder-master. Click Next and then Finish. 
+
+4. Click 'Run' on the toolbar to launch the application.
+
+.
+
 #Classes Documentation
 
 BaseballStatFinder uses three created classes BaseballList, BasePlayerFinder and PlayersTable. The latter two are GUIs. 
@@ -173,16 +188,7 @@ There is some data in this file that isn't accessed in this application. It is r
 | BA   |  Total Batting Average recorded in this season. |
 | SLG   |  Total Slugging Percentage recorded this season. |	
 
-##Running the Program
-There are multiple ways to access this program. It can be compiled and ran with any Java IDE, but since I created the project using Eclipse, I will explain how to run the program through Eclipse. Feel free to use any Java IDE you wish.
 
-1. [Download Eclipse](http://www.eclipse.org/downloads/packages/release/Kepler/SR2) and install it on your system.
-
-2. Download the git repository as a .zip file and extract it to your system.
-
-3. Open Eclipse and select File-\>Import-\>General-\>Existing Projects into WorkSpace. Click Next, then click Browse for root directory and locate your extracted BaseballStatFinder-master. Click Next and then Finish. 
-
-4. Click 'Run' on the toolbar to launch the application.
 																				
 
 
