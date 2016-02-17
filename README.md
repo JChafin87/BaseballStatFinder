@@ -34,7 +34,6 @@ There are multiple ways to access this program. It can be compiled and ran with 
 .
 
 #Classes Documentation
-=================
 
 BaseballStatFinder uses three created classes: BaseballList, BasePlayerFinder and PlayersTable. The latter two are GUIs. 
 
