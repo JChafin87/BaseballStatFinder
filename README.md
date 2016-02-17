@@ -65,6 +65,42 @@ _Creates an empty BaseballList. The attribute values will be set later via metho
 | LinkedList\<String[]\>     | **findPlayers**(float[] paramValues) |
 |      |  _A method that returns a Linked List of player stats that match the paramValues. (See Class BasePlayerFinder for more info on “paramValues”)._  |
 
+---
+###BasePlayerFinder 
+---
+
+This is the GUI where the user enters the parameters used to create the final PlayersTable. It is the main class of our application. It implements the class ActionListener.
+
+####Constructor
+
+public BasePlayerFinder()
+
+Initializes our JFrame.
+
+####Attributes
+
+| Attribute | Description|
+| ------------- |:-------------:|
+| private JPanel contentPane      | The JPanel that allows the user to select the parameters for the final table . |
+| private JComboBox yearBox      | Selects the value of the year to populate table.      | 
+| private JTextField param1Value | Gets the number value of our first stat to search.      |
+| private JTextField param2Value      | Gets the number value of our second stat to search. |
+| private JTextField param3Value      | Gets the number value of our third stat to search.      | 
+| private JComboBox param1Index | Gets the first stat to search for (Example: Games Played)      |
+| private JComboBox param2Index      | Gets the second stat to search for (Example: Games Played) |
+| private JComboBox param3Index      | Gets the third stat to search for (Example: Games Played)     | 
+|private JComboBox param1Compare | Gets the first operator for our serach (Example: \<= or \>= )     |
+| private JComboBox param2Compare     | Gets the second operator for our serach (Example: \<= or \>=) |
+| private JComboBox param3Compare      | Gets the third operator for our serach (Example: \<= or \>= )     | 
+| public float[] paramValues | An array of the values of all the other attributes. Passed to BaseballList's findPlayers() funtion to generate our final dataset.      |
+| private JButton generateButton | Button that passes the yearBox value into a new BaseballList. Creates a LinkedList\<String[]\> that utilizes BaseballList.findPlayers() and creates a PlayersTable from the created LinkedList.      |
+
+####Methods
+
+| Returns | Method|
+| ------------- |:-------------:|
+| void     | **actionPerformed**(ActionEvent e) |
+|      |  _Overrides method from ActionListener. Captures user's action on the frame's components and saves the values they choose into paramValues._ | 
 
 -----
 ###PlayersTable 
@@ -95,42 +131,7 @@ _Initializes window with a table that’s populated with a Linked List (# of row
 | void     | **opentPT**(LinkedList<String[]> playerList) |
 |      |  _A method to launch a new PlayersTable window from a separate JFrame._  | 
 
----
-###BasePlayerFinder 
----
 
-This is the GUI where the user enters the parameters used to create the final PlayersTable. It is the main class of our application. It implements the class ActionListener.
-
-####Constructor
-
-public BasePlayerFinder()
-
-Initializes our JFrame.
-
-####Attributes
-
-| Attribute | Description|
-| ------------- |:-------------:|
-| private JPanel contentPane      | The JPanel that allows the user to select the parameters for the final table . |
-| private JComboBox yearBox      | Selects the value of the year to populate table.      | 
-| private JTextField param1Value | Gets the number value of our first stat to search.      |
-| private JTextField param2Value      | Gets the number value of our second stat to search. |
-| private JTextField param3Value      | Gets the number value of our third stat to search.      | 
-| private JComboBox param1Index | Gets the first stat to search for (Example: Games Played)      |
-| private JComboBox param2Index      | Gets the second stat to search for (Example: Games Played) |
-| private JComboBox param3Index      | Gets the third stat to search for (Example: Games Played)     | 
-|private JComboBox param1Compare | Gets the first operator for our serach (Example: \<= or \>= )     |
-| private JComboBox param2Compare     | Gets the second operator for our serach (Example: \<= or \>=) |
-| private JComboBox param3Compare      | Gets the third operator for our serach (Example: \<= or \>= )     | 
-| public float[] paramValues | An array of the values of all the other attributes. Used to find our final list.      |
-| private JButton generateButton | Button that passes the yearBox value into a new BaseballList. Creates a LinkedList\<String[]\> that utilizes BaseballList.findPlayers() and creates a PlayersTable from the created LinkedList.      |
-
-####Methods
-
-| Returns | Method|
-| ------------- |:-------------:|
-| void     | **actionPerformed**(ActionEvent e) |
-|      |  _Overrides method from ActionListener. Captures user's action on the frame's components and saves the values they choose into paramValues._ | 
 
 .
 
@@ -191,6 +192,10 @@ There is some data in this file that isn't accessed in this application. It is r
 #Challenges
 
 The major design challenge for this application was dealing with the user's operator choice (\<= or \>=). Since operators aren't data types in Java, a bit of creativity was needed. With three paramater options and two options for each operator, "/<=" was stored as "0" and "\>=" was stored as "1". A switch case was then used to obtain the correct data, such as "000" if all operators were "\<=" or "111" if all operators were "\>=".
+
+#Future Implementation
+
+The data from the input files is currently being read as String Arrays. This creates problems when sorting the final table. A new class needs to be created to hold the varying types of data received from the input files.
 
 #Credits
 
