@@ -111,6 +111,7 @@ Initializes our JFrame.
 | private JButton generateButton | Button that passes the yearBox value into a new BaseballList. Creates a LinkedList\<String[]\> that utilizes BaseballList.findPlayers() and creates a PlayersTable from the created LinkedList.      |
 
 ####Methods
+
 | Returns | Method|
 | ------------- |:-------------:|
 | void     | **actionPerformed**(ActionEvent e) |
