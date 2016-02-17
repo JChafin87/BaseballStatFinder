@@ -171,7 +171,18 @@ There is some data in this file that isn't accessed in this application. It is r
 | SF    |  Number of Sacrifice Flies recorded in this season. |
 | GIDP   | Number of double plays grounded into this season. |
 | BA   |  Total Batting Average recorded in this season. |
-| SLG   |  Total Slugging Percentage recorded this season. |								
+| SLG   |  Total Slugging Percentage recorded this season. |	
+
+##Running the Program
+There are multiple ways to access this program. It can be compiled and ran with any Java IDE, but since I created the project using Eclipse, I will explain how to run the program through Eclipse. Feel free to use any Java IDE you wish.
+
+1. [Download Eclipse](http://www.eclipse.org/downloads/packages/release/Kepler/SR2) and install it on your system.
+
+2. Download the git repository as a .zip file and extract it to your system.
+
+3. Open Eclipse and select File-\>Import-\>General-\>Existing Projects into WorkSpace. Click Next, then click Browse for root directory and locate your extracted BaseballStatFinder-master. Click Next and then Finish. 
+
+4. Click 'Run' on the toolbar to launch the application.
 																				
 
 
