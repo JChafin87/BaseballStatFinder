@@ -195,9 +195,11 @@ There is some data in this file that isn't accessed in this application. It is r
 
 The major design challenge for this application was dealing with the user's operator choice (\<= or \>=). Since operators aren't data types in Java, a bit of creativity was needed. With three paramater options and two options for each operator, "/<=" was stored as "0" and "\>=" was stored as "1". A switch case was then used to obtain the correct data, such as "000" if all operators were "\<=" or "111" if all operators were "\>=".
 
-#Future Implementation
+#Current Problems/Future Implementation
 
 The data from the input files is currently being read as String Arrays. This creates problems when sorting the final table by integer values. A new class needs to be created to hold the varying types of data received from the input files.
+
+The data in the input file is a subset of data of every MLB player in history. "Current Players" was defined by players who's "finalGame" occurred in 2014. However, this doesn't take into account current players who missed the 2014 season due to injury/suspension. Unfortunately, there doesn't appear to be any attribute in the dataset that could alleviate this problem.
 
 #Credits
 
