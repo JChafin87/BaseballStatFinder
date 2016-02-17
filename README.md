@@ -188,6 +188,10 @@ There is some data in this file that isn't accessed in this application. It is r
 | BA   |  Total Batting Average recorded in this season. |
 | SLG   |  Total Slugging Percentage recorded this season. |	
 
+#Challenges
+
+The major design challenge for this application was dealing with the user's operator choice (\<= or \>=). Since operators aren't data types in Java, a bit of creativity was needed. With three paramater options and two options for each operator, "/<=" was stored as "0" and "\>=" was saved as "1". A switch case was then used to obtain the correct data, such as "000" if all operators were "\<=" or "111" if all operators were "\>=".
+
 #Credits
 
 Thank you to Sean Lahman for supplying the amazing data. The dataset used in this application is a subset of data that can be found by [visiting Sean Lahman's site](http://www.seanlahman.com/baseball-archive/statistics/).
