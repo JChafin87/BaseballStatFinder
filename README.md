@@ -195,7 +195,7 @@ The major design challenge for this application was dealing with the user's oper
 
 #Future Implementation
 
-The data from the input files is currently being read as String Arrays. This creates problems when sorting the final table. A new class needs to be created to hold the varying types of data received from the input files.
+The data from the input files is currently being read as String Arrays. This creates problems when sorting the final table by integer values. A new class needs to be created to hold the varying types of data received from the input files.
 
 #Credits
 
