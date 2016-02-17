@@ -25,11 +25,10 @@ This is the class that stores the data from the input files "MasterCurrent.csv" 
 ###PlayersTable
 This is the GUI that displays the players passed from BasePlayerFinder.java
 ![IMG4](http://i.imgur.com/ozY1TXO.png)
-| Returns | Method                                                                                                         |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| Void    | openPT(LinkedList<String[]> linkedList)   A method to launch a new PlayersTable window from a separate JFrame. |
-|         |                                                                                                                |
-|         |                                                                                                                |
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 
 
