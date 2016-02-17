@@ -110,6 +110,12 @@ Initializes our JFrame.
 | public float[] paramValues | An array of the values of all the other attributes. Used to find our final list.      |
 | private JButton generateButton | Button that passes the yearBox value into a new BaseballList. Creates a LinkedList\<String[]\> that utilizes BaseballList.findPlayers() and creates a PlayersTable from the created LinkedList.      |
 
+####Methods
+| Returns | Method|
+| ------------- |:-------------:|
+| void     | **actionPerformed**(ActionEvent e) |
+|      |  Overrides method from ActionListener. Captures user's action on the frame's components and saves the values they choose into paramValues. | 
+
 
 
 
