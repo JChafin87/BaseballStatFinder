@@ -26,12 +26,6 @@ public LinkedList&lt;String\[\]&gt; tableStats;
 
 **Methods**
 
-*Returns* *Method Name*
-
-Void **opentPT**(LinkedList&lt;String\[\]&gt; playerList)
-
-> A method to launch a new PlayersTable window from a separate JFrame.
-
   ------------------------------------------------------------------------------------
   **Returns**   **Method Name**
   ------------- ----------------------------------------------------------------------
