@@ -193,7 +193,7 @@ There is some data in this file that isn't accessed by this application. It is r
 
 #Challenges
 
-The major design challenge for this application was dealing with the user's operator choice (\<= or \>=). Since operators aren't data types in Java, a bit of creativity was needed. With three paramater options and two options for each operator, "/<=" was stored as "0" and "\>=" was stored as "1". A switch case was then used to obtain the correct data, such as "000" if all operators were "\<=" or "111" if all operators were "\>=".
+The major design challenge for this application was dealing with the user's operator choice (\<= or \>=). Since operators aren't data types in Java, a bit of creativity was needed. With three parameter options and two options for each operator, "/<=" was stored as "0" and "\>=" was stored as "1". A switch case was then used to obtain the correct data, such as "000" if all operators were "\<=" or "111" if all operators were "\>=".
 
 #Current Problems/Future Implementation
 
