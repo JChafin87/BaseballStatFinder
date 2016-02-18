@@ -4,7 +4,7 @@
 # Project Summary 
 
 
-Baseball Stat Finder is an application that searches through season statistics for every current Major Leauge Baseball player. The user selects a year to search through, and up to 3 stats to filter by. The application will generate a table based on those parameters. 
+Baseball Stat Finder is an application that searches through season statistics for every current Major League Baseball player. The user selects a year to search through, and up to 3 stats to filter by. The application will generate a table based on those parameters. 
 
 **Example:**
   
@@ -94,7 +94,7 @@ Initializes our JFrame.
 |private JComboBox param1Compare | Gets the first operator for our search (Example: \<= or \>= ).     |
 | private JComboBox param2Compare     | Gets the second operator for our search (Example: \<= or \>=). |
 | private JComboBox param3Compare      | Gets the third operator for our search (Example: \<= or \>= ) .    | 
-| public float[] paramValues | An array of the values of all the JComboBoxes. Passed to BaseballList's findPlayers() funtion to generate our final dataset.      |
+| public float[] paramValues | An array of the values of all the JComboBoxes. Passed to BaseballList's findPlayers() function to generate our final dataset.      |
 | private JButton generateButton | Button that passes the yearBox value into a new BaseballList(yearBox). Creates a LinkedList\<String[]\> that utilizes BaseballList.findPlayers() and creates a PlayersTable from the created LinkedList.      |
 
 ####Methods
@@ -130,7 +130,7 @@ _Initializes window with a table that’s populated with a LinkedList (number of
 
 | Returns | Method|
 | ------------- |:-------------:|
-| void     | **opentPT**(LinkedList<String[]> playerList) |
+| void     | **opentPT**(LinkedList/<String[]/> playerList) |
 |      |  _A method to launch a new PlayersTable window from a separate JFrame._  | 
 
 
