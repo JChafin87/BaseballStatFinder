@@ -21,15 +21,10 @@ The program would return a table that only shows players that 1) played in at le
 .
 
 #Running the Program
-There are multiple ways to access this program. It can be compiled and ran with any Java IDE, but since I created the project using Eclipse, I will explain how to run the program through Eclipse. Feel free to use any Java IDE or compiler you wish.
 
-1. [Download Eclipse](http://www.eclipse.org/downloads/packages/release/Kepler/SR2) and install it.
+The program requires a compiler compliance level of Java 1.7 to run.
 
-2. Download the git repository as a .zip file and extract it to your system.
-
-3. Open Eclipse and select File-\>Import-\>General-\>Existing Projects into WorkSpace. Click Next, then click Browse for root directory and locate your extracted BaseballStatFinder-master. Click Next and then Finish. 
-
-4. Click 'Run' on the toolbar to launch the application.
+To execute the program simply download the repository, compile the code, and run.
 
 .
 
@@ -38,14 +33,14 @@ There are multiple ways to access this program. It can be compiled and ran with 
 BaseballStatFinder uses three created classes: BaseballList, BasePlayerFinder and PlayersTable. The latter two are GUIs. 
 
 ----
-###BaseballList
+###Class: BaseballList
 ----
 
 This is the class that stores the data from the input files "MasterCurrent.csv" and "BattingCurrent.csv". (For more information on these files, see the "Files" section of this README.) 
 
 ####Constructor
 
-BaseballList()
+public BaseballList()
 
 _Creates an empty BaseballList. The attribute values will be set later via method calls._
 
@@ -68,7 +63,7 @@ _Creates an empty BaseballList. The attribute values will be set later via metho
 |      |  _A method that returns a Linked List of player stats that match the paramValues. (See Class BasePlayerFinder for more info on “paramValues”)._  |
 
 ---
-###BasePlayerFinder 
+###Class: BasePlayerFinder 
 ---
 
 This is the GUI where the user enters the parameters used to create the final PlayersTable. It is the main class of our application. It implements the class ActionListener.
@@ -105,7 +100,7 @@ Initializes our JFrame.
 |      |  _Overrides method from ActionListener. Captures user's action on the frame's components and saves the values they choose into paramValues._ | 
 
 -----
-###PlayersTable 
+###Class: PlayersTable 
 
 -----
 
@@ -113,7 +108,7 @@ This is the GUI that displays the players passed from BasePlayerFinder.
 
 ####Constructor
 
-PlayersTable(LinkedList/<String[]/> linkedList)
+public PlayersTable(LinkedList/<String[]/> linkedList)
 
 _Initializes window with a table that’s populated with a LinkedList (number of rows in table) of String Arrays (stats for player/number of columns)._
 
