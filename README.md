@@ -113,7 +113,7 @@ This is the GUI that displays the players passed from BasePlayerFinder.
 
 ####Constructor
 
-PlayersTable(LinkedList<String[]> linkedList)
+PlayersTable(LinkedList/<String[]/> linkedList)
 
 _Initializes window with a table that’s populated with a LinkedList (number of rows in table) of String Arrays (stats for player/number of columns)._
 
@@ -124,7 +124,7 @@ _Initializes window with a table that’s populated with a LinkedList (number of
 | ------------- |:-------------:|
 | private JPanel contentPane      | The JPanel that displays the result table. |
 | private JTable table1      | The JTable that displays the data of tableStats.      | 
-| public LinkedList<String[]> tableStats | Contains the values to populate the resulting table.      |
+| public LinkedList/<String[]/> tableStats | Contains the values to populate the resulting table.      |
 
 ####Methods
 
