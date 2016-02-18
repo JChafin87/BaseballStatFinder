@@ -145,7 +145,7 @@ These files are raw data of player information and batting statistics respective
 ---
 ###MasterCurrent
 ---
-There is some data in this file that isn't accessed in this application. It is retained in case it is implemented at a later date.
+There is some data in this file that isn't accessed by this application. It is retained in case it is implemented at a later date.
 
 | Attribute | Description|
 | ------------- |:-------------:|
@@ -155,7 +155,7 @@ There is some data in this file that isn't accessed in this application. It is r
 | nameLast     |  Player's last name. | 
 | weight     | Player's weight. (not used) |
 | height     |  Player's height. (not used) | 
-| bats     | Side of the plate that player bats from. (not used) |
+| bats     | Side of the plate that the player bats from. (not used) |
 | throws     |  Player's throwing hand. (not used)| 
 | debut     | Date of player's first MLB game. (not used)|
 | finalGame     |  Date of player's final MLB game. (not used) | 
@@ -168,9 +168,9 @@ There is some data in this file that isn't accessed in this application. It is r
 | ------------- |:-------------:|
 | playerID    | A unique value for each player. Is used as our primary key. |
 | yearID     |  The year that the stats occurred. | 
-| stint    | A Number representing how many times a player has been traded and traded back to this teamID (not used/to delete)|
+| stint    | A Number representing how many times a player has been traded and traded back to this teamID. (not used/to delete)|
 | teamID     |  ID of the player's team. | 
-| lgID     | ID of the player's team's league. |
+| lgID     | ID of the player's league. |
 | G    |  Number of games played in this season. | 
 | AB     | Number of At Bats in this season. |
 | R     |  Number of Runs scored in this season. | 
@@ -178,7 +178,7 @@ There is some data in this file that isn't accessed in this application. It is r
 | 2B    |  Number of Doubles recorded in this season. | 
 | 3B   | Number of Triples recorded in this season. |
 | HR     |  Number of Home Runs hit in this season. | 
-| RBI     | Number of Runs Batted in for this season. |
+| RBI     | Number of Runs Batted In for this season. |
 | SB    |  Number of Stolen Bases recorded in this season. | 
 | CS     | Number of times Caught Stealing in this season. |
 | BB    |  Number of walks recorded in this season. | 
