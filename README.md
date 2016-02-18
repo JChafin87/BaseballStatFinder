@@ -21,7 +21,7 @@ The program would return a table that only shows players that 1) played in at le
 .
 
 #Running the Program
-There are multiple ways to access this program. It can be compiled and ran with any Java IDE, but since I created the project using Eclipse, I will explain how to run the program through Eclipse. Feel free to use any Java IDE you wish.
+There are multiple ways to access this program. It can be compiled and ran with any Java IDE, but since I created the project using Eclipse, I will explain how to run the program through Eclipse. Feel free to use any Java IDE or compiler you wish.
 
 1. [Download Eclipse](http://www.eclipse.org/downloads/packages/release/Kepler/SR2) and install it.
 
@@ -61,7 +61,7 @@ _Creates an empty BaseballList. The attribute values will be set later via metho
 | void     | **readFile()** |
 |      |  _A method that reads all of the players’ name data from the input file “MasterCurrent.csv” and stores these values into the “players” attribute._  | 
 | void     | **readStats**(String yearValue) |
-|      |  _A method that reads the players’ stats from the input file “BattingCurrent.csv” and saves these values to the “stats” attribute. yearValue represents the year value of the stats you want to return. (i.e. if yearValue = “1997”, “stats” will be all entries where the year is 1997.)_  |
+|      |  _A method that reads the players’ stats from the input file “BattingCurrent.csv” and saves these values to the “stats” attribute. yearValue represents the year of the stats you want to return. (i.e. if yearValue = “1997”, “stats” will be all entries where the year is 1997.)_  |
 | String[]    | **findPlayer**(String playerID) |
 |      |  _A method that returns a player’s name(first and last) by passing his unique playerID._  |
 | LinkedList\<String[]\>     | **findPlayers**(float[] paramValues) |
@@ -84,18 +84,18 @@ Initializes our JFrame.
 | Attribute | Description|
 | ------------- |:-------------:|
 | private JPanel contentPane      | The JPanel that allows the user to select the parameters for the final table . |
-| private JComboBox yearBox      | Selects the value of the year to populate table.      | 
+| private JComboBox yearBox      | Selects the year to search values from.      | 
 | private JTextField param1Value | Gets the number value of our first stat to search.      |
 | private JTextField param2Value      | Gets the number value of our second stat to search. |
 | private JTextField param3Value      | Gets the number value of our third stat to search.      | 
-| private JComboBox param1Index | Gets the first stat to search for (Example: Games Played)      |
-| private JComboBox param2Index      | Gets the second stat to search for (Example: Games Played) |
-| private JComboBox param3Index      | Gets the third stat to search for (Example: Games Played)     | 
-|private JComboBox param1Compare | Gets the first operator for our serach (Example: \<= or \>= )     |
-| private JComboBox param2Compare     | Gets the second operator for our serach (Example: \<= or \>=) |
-| private JComboBox param3Compare      | Gets the third operator for our serach (Example: \<= or \>= )     | 
-| public float[] paramValues | An array of the values of all the other attributes. Passed to BaseballList's findPlayers() funtion to generate our final dataset.      |
-| private JButton generateButton | Button that passes the yearBox value into a new BaseballList. Creates a LinkedList\<String[]\> that utilizes BaseballList.findPlayers() and creates a PlayersTable from the created LinkedList.      |
+| private JComboBox param1Index | Gets the first stat to search for (Example: Games Played).      |
+| private JComboBox param2Index      | Gets the second stat to search for (Example: Games Played). |
+| private JComboBox param3Index      | Gets the third stat to search for (Example: Games Played).     | 
+|private JComboBox param1Compare | Gets the first operator for our search (Example: \<= or \>= ).     |
+| private JComboBox param2Compare     | Gets the second operator for our search (Example: \<= or \>=). |
+| private JComboBox param3Compare      | Gets the third operator for our search (Example: \<= or \>= ) .    | 
+| public float[] paramValues | An array of the values of all the JComboBoxes. Passed to BaseballList's findPlayers() funtion to generate our final dataset.      |
+| private JButton generateButton | Button that passes the yearBox value into a new BaseballList(yearBox). Creates a LinkedList\<String[]\> that utilizes BaseballList.findPlayers() and creates a PlayersTable from the created LinkedList.      |
 
 ####Methods
 
@@ -109,13 +109,13 @@ Initializes our JFrame.
 
 -----
 
-This is the GUI that displays the players passed from BasePlayerFinder.java
+This is the GUI that displays the players passed from BasePlayerFinder.
 
 ####Constructor
 
 PlayersTable(LinkedList<String[]> linkedList)
 
-_Initializes window with a table that’s populated with a Linked List (# of rows in table) of String Arrays (stats for player)._
+_Initializes window with a table that’s populated with a LinkedList (number of rows in table) of String Arrays (stats for player/number of columns)._
 
 
 ####Attributes
@@ -204,10 +204,3 @@ The data in the input file is a subset of data of every MLB player in history. "
 #Credits
 
 Thank you to Sean Lahman for supplying the amazing data. The dataset used in this application is a subset of data that can be found by [visiting Sean Lahman's site](http://www.seanlahman.com/baseball-archive/statistics/).
-																				
-
-
-
-
-
-
